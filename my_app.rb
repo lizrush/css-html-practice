@@ -6,7 +6,7 @@ require 'sinatra'
 class MyApp < Sinatra::Base
   
 before do
-  @db = Sequel.connect('sqlite://happyhour.db')
+  @db = Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://happyhour.db')
   @happyhour = @db[:happyhour]
 end
 
