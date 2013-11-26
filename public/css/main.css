@@ -1,3 +1,37 @@
+body {
+	cursor: url(../pics/martini.jpg), auto;
+	background-image: url(../pics/nebula.jpg);
+	background-repeat:repeat;
+}
+
+.header-cont {
+		width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px; 
+    padding: 0px 5px;
+  }
+
 #header {
-	border: 1px solid red;
+	height: 70px;
+	background-color: #c60034;
+	text-align: center;
+}
+
+.container {
+	width: 800px;
+	border: 5px solid black;
+	margin: 90px auto;
+	background-color: #c60034;
+}
+
+.box {
+	border: 1px solid blue;
+	width: 390px;
+	padding-left: 5px;
+	display: inline-block;
+}
+
+form {
+	display: inline-block;
 }
