@@ -10,10 +10,8 @@ end
 
 
 
-# to delete
+# to delete db in prod
+  # heroku pg:reset DATABASE_URL --confirm liz-sinatra
 
-# heroku pg:reset DATABASE_URL --confirm liz-sinatra
-
-# to create_script
-
-# heroku run ruby create_script.rb
+# to create_script in prod
+  # heroku run ruby create_script.rb

@@ -1,5 +1,5 @@
 body {
-/*  cursor: url(../pics/martini.jpg), auto;*/
+  cursor: url(../pics/martini.jpg), auto;
   background-image: url(../pics/nebula.jpg);
   background-repeat:repeat;
   color: #59d1eb;
@@ -74,7 +74,7 @@ li {
 }
 
 .box {
-  border: 1px solid blue;
+/*  border: 1px solid blue;*/
   width: 460px;
   padding-left: 5px;
   display: inline-block;
