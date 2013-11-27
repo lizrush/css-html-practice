@@ -105,6 +105,21 @@ ul {
   list-style-type:none;
 }
 
+.site-menu ul.bloglist li {
+  display: hidden;
+  position: absolute;
+}
+
+.site-menu ul.bloglist:hover li{
+  display: block;
+  position: relative;
+  color: #59d1eb;
+  background-color: #000;
+  border: 5px solid black;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 li {
   display: inline;
 }

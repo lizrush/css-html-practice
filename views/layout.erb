@@ -8,7 +8,6 @@
   <body>
     <div class='header-cont'>
       <div id='header'>
-        
         <div id="adalogo">
           <a href="http://adadevelopersacademy.org" target="blank"><img src="/pics/adalogo.png" height="106" width="106" alt="ada developers logo"></a>
         </div> 
@@ -26,8 +25,12 @@
             <a href="/cute_pictures_of_animals">pics of cute animals</a>
           </li>
 
-          <li>
-            <a href="/blog">blog</a>
+          <li><a href="/blog">blog</a>
+              <ul class="bloglist">
+                <% @posts.each do |posts| %>
+                  <li><a href="/blog/<%=posts%>"> <%= posts %></a></li>
+                <% end %>
+              </ul>
           </li>
           
           <li>
@@ -42,8 +45,8 @@
 
     <div role="main" div class='container'>
 
-
       <%= yield %>
+
     </div>
 
 
