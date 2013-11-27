@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> ada dev academy student happy hour</title>
+  <link href="/css/main.css" media="all" rel="stylesheet">
+</head>
+
+  <body>
+    <div class='header-cont'>
+      <div id='header'>
+        
+        <div id="adalogo">
+          <a href="http://adadevelopersacademy.org" target="blank"><img src="/pics/adalogo.png" height="106" width="106" alt="ada developers logo"></a>
+        </div> 
+         
+        <h1><%= locals[:title] %></h1>
+
+        <div id="twitterbutton">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-via="lizmrush" data-  size="large" data-dnt="true">tweet this</a>
+          <script src="/javascript/tweetthis.js" type="text/javascript"></script> 
+        </div>
+        
+        <div class='site-menu'>
+         <ul>
+          <li>
+            <a href="/cute_pictures_of_animals">pics of cute animals</a>
+          </li>
+
+          <li>
+            <a href="/blog">blog</a>
+          </li>
+          
+          <li>
+            <a href="mailto:liz@lizmrush.com?subject=I'd like to offer you a high-paying front-end dev job">contact</a>
+          </li>
+         </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div role="main" div class='container'>
+
+
+      <%= yield %>
+    </div>
+
+
+  </body>
+
+<script src="/javascript/cursorsparkle.js" type="text/javascript"></script>
+
+</html>

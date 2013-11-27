@@ -11,7 +11,7 @@ before do
 end
 
   get "/" do
-    erb :index
+    erb :index, :locals => {:title => "~*ada happy hour voting mechanism*~"} 
   end
 
   post "/" do
@@ -26,8 +26,14 @@ end
   end
 
   get "/cute_pictures_of_animals" do
-    erb :cute_pictures_of_animals
+    erb :cute_pictures_of_animals, :locals => {:title => "~*pics of animals*~"} 
   end
+
+  get "/blog/:post_name" do
+    params[:post_name]
+    erb "/posts/#{params[:post_name]}".to_sym
+  end
+
 
 end
 
