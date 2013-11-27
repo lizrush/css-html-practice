@@ -61,6 +61,7 @@ body {
   border: 10px solid black;
   -moz-border-radius: 15px;
   border-radius: 15px;
+  opacity: 1;
 }
 
 .largebox {
