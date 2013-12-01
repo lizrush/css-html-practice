@@ -7,13 +7,14 @@ body {
 }
 
 .header-cont {
-    width: 100%;
-    background-color: #c60034;
-    position: fixed;
-    height: 125px;
-    top: 0px;
-    left: 0px;
-  }
+  width: 100%;
+  background-color: rgba(198,0,52,0.7);
+  position: fixed;
+  height: 125px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
 
 #header {
   display: block;
@@ -32,13 +33,26 @@ body {
   right: 67px;
 }
 
-.site-menu a { 
-  color: #59d1eb;
+.site-menu {
+  display: inline;
+  position: fixed;
+  top: 0px;
+  right: 100px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.site-menu li { 
   background-color: #000;
-  padding: 5px 5px;
   border: 5px solid black;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  margin: 5px;
+}
+
+.site-menu a { 
+  color: #59d1eb;
 }
 
 .container {
@@ -48,7 +62,7 @@ body {
   border: 10px solid black;
   margin: 150px auto;
   padding: 10px;
-  background-color: #c60034;
+  background-color: rgba(198,0,52,0.7);
 }
 
 .box {
@@ -96,28 +110,41 @@ h3 {
   font-size: 1.05em;
 }
 
-ul {
-  position: fixed;
-  top: 0px;
-  right: 100px;
-  padding:0;
-  margin:0;
-  list-style-type:none;
+h4 a {
+  color: #000;
 }
 
-.site-menu ul.bloglist li {
-  display: hidden;
-  position: absolute;
-}
-
-.site-menu ul.bloglist:hover li{
-  display: block;
-  position: relative;
+h4 a:hover {
   color: #59d1eb;
+}
+
+.navigation {
+  display: inline-block;
+  margin: 0px;
+}
+
+.navigation li:hover ul{
+  display: block;
+}
+
+.bloglist {
+  width: 175px;
+  position: absolute;
+  display: none;
   background-color: #000;
   border: 5px solid black;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  margin-left: 246px;
+  padding-left: 0px;
+  /*i believe i sort-of understand z-index but would appreciate feedback if i am using this wrong. i kept having troubles with my dropdown that shows upon hovering the blog link but then when the person tried to move the cursor to the actual list it seemed to think the cursor was like, "on" the header container "under" the dropdown...? pls halp! */
+  z-index: 2;
+}
+
+.bloglist li {
+  position: relative;
+  display: block;
+  margin-right: 80px;
 }
 
 li {

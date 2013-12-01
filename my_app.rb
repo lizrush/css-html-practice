@@ -49,7 +49,7 @@ end
       @meta_data
     else
       @meta_data = {}
-      @posts.each do |posts|
+      @posts.each do |post|
       html = erb("/posts/#{post}".to_sym, layout: false)
       meta = YAML.load(html.split("\n\n", 2).first)
       @meta_data[post] = meta
