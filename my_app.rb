@@ -35,13 +35,13 @@ end
   end
 
   get "/blog" do
-    erb :blog, :locals => {:title => "blog"}
+    erb :blog, :locals => {:title => "~*blog*~"}
   end
 
   get "/blog/:post_name" do
     page = erb("/posts/#{params[:post_name]}".to_sym, layout: false)
     page_body = page.split("\n\n", 2).last
-    erb page_body, :locals => {:title => "blog"}
+    erb page_body, :locals => {:title => "~*blog*~"}
   end
 
   def meta_data
