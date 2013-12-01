@@ -1,5 +1,4 @@
-  
-<% sorted_posts = meta_data.sort_by {|post, date_hash| date_hash["date"] }.reverse %>
+ <% sorted_posts = meta_data.sort_by {|post, date_hash| date_hash["date"] }.reverse %>
 
  <% sorted_posts.each do |post, date_array| %>
    <li><a href="/blog/<%= post %>"> <h4> <%= post %></a></h4><li>
