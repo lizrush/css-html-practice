@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <%= params[:title] %></title>
+  <link href="/css/blogstylesheet.css" media="all" rel="stylesheet">
+</head>
+
+  <body>
+    <div role="header and navigation" div class='header-cont'>
+      <div id='header'>
+        
+        <div id="adalogo">
+          <a href="http://adadevelopersacademy.org" target="blank"><img src="/pics/adalogo.png" height="106" width="106" alt="ada developers logo"></a>
+        </div> 
+         
+        <h1>liz's ada blog</h1>
+
+        <div class='site-menu'>
+          <ul class='navigation'>
+            <li>
+              <a href="/">voting</a>
+            </li>
+            <li>
+              <a href="/cute_pictures_of_animals">pics of cute animals</a>
+            </li>
+            <li>
+              <a href="/blog">blog</a>
+                <ul class="bloglist">
+                  <% sorted_posts = meta_data.sort_by {|post, date_hash| date_hash["date"] }.reverse %>
+                  <% sorted_posts.each do |post, date_array| %>
+                    <li><a href="/blog/<%=post%>"> <%= post %></a><li>
+                  <% end %>
+                </ul>
+            </li>
+            <li>
+              <a href="mailto:liz@lizmrush.com?subject=I'd like to offer you a high-paying front-end dev job">contact</a>
+            </li>
+         </ul>
+        </div>
+      </div>
+    </div>
+
+    <div role="main" div class='container'>
+      <%= yield %>
+    </div>
+
+  </body>

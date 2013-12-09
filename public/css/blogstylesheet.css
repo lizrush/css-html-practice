@@ -1,0 +1,161 @@
+body {
+  background-image: url(../pics/leaves2.jpg);
+  font-family: Helvetica, Arial, auto;
+  color: #665533;
+}
+
+.header-cont {
+  width: 100%;
+  background-color: #665533;
+  position: fixed;
+  height: 122px;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+#header {
+  display: block;
+  border-bottom: 3px solid #eeffee;
+}
+
+#adalogo {
+  margin: 5px;
+  display: inline-block;
+}
+
+.site-menu {
+  display: inline;
+  position: fixed;
+  top: 0px;
+  right: 100px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.site-menu li { 
+  background-color: #997744;
+  border: 3px solid #997744;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.site-menu a { 
+  color: #eeffee;
+}
+
+.container {
+  width: 800px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 3px solid #665533;
+  margin: 150px auto;
+  padding: 10px;
+  background-color: #eeffee;
+}
+
+.box {
+  width: 480px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.box img {
+  border: 10px solid black;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  opacity: 1;
+}
+
+.largebox {
+  margin: 20px auto;
+  width: 520px;
+  display: block;
+}
+
+.largebox img {
+  border: 10px solid black;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+form {
+  display: inline-block;
+}
+
+h1 {
+  color: #eeffee;
+  display: inline-block;
+  margin: 0px;
+  vertical-align: 38px;
+}
+
+h2 {
+  color: #665533;
+}
+
+h3 {
+  color: #665533;
+  font-size: 1.05em;
+}
+
+h4 a {
+  color: #665533;
+}
+
+h4 a:hover {
+  color: #997744;
+}
+
+h5 a:hover {
+ color: 997744;
+}
+
+h5 a:visited {
+ color: 997744;
+}
+
+.navigation {
+  display: inline-block;
+  margin: 0px;
+}
+
+.navigation li:hover ul{
+  display: block;
+}
+
+.bloglist {
+  width: 175px;
+  position: absolute;
+  display: none;
+  background-color: #997744;
+  border: 1px solid #997744;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-left: 229px;
+  padding-left: 0px;
+  z-index: 2;
+}
+
+.bloglist li {
+  position: relative;
+  display: block;
+  margin-right: 80px;
+}
+
+img.blogimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #665533;
+  -moz-border-radius: 5px;
+  border-radius: 5px; 
+}
+
+
+
+li {
+  display: inline;
+}
