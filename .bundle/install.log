@@ -1,0 +1,8 @@
+# Logfile created on 2014-01-06 22:49:34 -0800 by logger.rb/41954
+I, [2014-01-06T22:49:34.074885 #756]  INFO -- : 0:  rack (1.5.2) from /Users/liz/.rvm/gems/ruby-2.0.0-p353/specifications/rack-1.5.2.gemspec
+I, [2014-01-06T22:49:35.594999 #756]  INFO -- : 0:  rack-protection (1.5.1) from /Users/liz/.rvm/gems/ruby-2.0.0-p353/specifications/rack-protection-1.5.1.gemspec
+I, [2014-01-06T22:49:47.227859 #756]  INFO -- : 0:  sequel (4.4.0) from /Users/liz/.rvm/gems/ruby-2.0.0-p353/specifications/sequel-4.4.0.gemspec
+I, [2014-01-06T22:49:47.230374 #756]  INFO -- : 0:  tilt (1.4.1) from /Users/liz/.rvm/gems/ruby-2.0.0-p353/specifications/tilt-1.4.1.gemspec
+I, [2014-01-06T22:49:50.563460 #756]  INFO -- : 0:  sinatra (1.4.4) from /Users/liz/.rvm/gems/ruby-2.0.0-p353/specifications/sinatra-1.4.4.gemspec
+I, [2014-01-06T22:49:50.566334 #756]  INFO -- : 0:  sqlite3 (1.3.8) from /Users/liz/.rvm/gems/ruby-2.0.0-p353/specifications/sqlite3-1.3.8.gemspec
+I, [2014-01-06T22:49:50.568792 #756]  INFO -- : 0:  bundler (1.5.0) from /Users/liz/.rvm/gems/ruby-2.0.0-p353/specifications/bundler-1.5.0.gemspec
