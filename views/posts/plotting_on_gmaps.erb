@@ -4,11 +4,11 @@ date: 2014-02-02
 
 This tutorial will walk a rails beginner through the process of how to plot coordinates on a map. This method is quick and easy, and will be relatively pain free.
 
-First, add the gem <a href="https://github.com/gazay/gon">gon </a>to your gemfile:
+First, add the gem <a href="https://github.com/gazay/gon">gon</a> to your gemfile:
 <p><img src='/pics/gemfile.png' class="blogimage" alt="the gems gon and geocoder"></p>
 <p>You'll see that I have included the awesome gem <a href="http://www.rubygeocoder.com">geocoder</a>. I used this gem to retrieve the coordinates of a visitor to my app via their IP addesss.</p>
 <p>Be sure to bundle install after adding the gems to your gemfile!</p>
-<p>To use gon is the simplest thing in the world. You merely assign some data to a variable (var) with gon. as a prefix in your controller.</p>
+<p>To use gon is the simplest thing in the world. You merely assign some data to a variable with "gon."" as a prefix in your controller.</p>
 <p><img src="/pics/gonvariable.png" class="blogimage" alt="gon.lat_long_array as a variable set in the controller"></p>
 <p>As you can see, I used the same format as I did for the instance variables I will use in my view. In the Visitors model, I use the geocoder gem to assign latitude and longitude values to the object before saving to the database. The geocoder documentation explains this well, but in order to plot these two separate values as one marker, we are going to want to have them as an array of arrays for each entry, like this: [[lat, long], [lat, long], [lat, long]...].</p>
 <p><img src="/pics/coordinatemethod.png" class="blogimage" alt="method for lat long array"></p>
@@ -19,7 +19,7 @@ First, add the gem <a href="https://github.com/gazay/gon">gon </a>to your gemfil
 
 <p>We are going to use the <a href="https://developers.google.com/maps/documentation/javascript/">google maps javascript api</a> to plot our set of coordinates. You can find code samples in the offical documentation, but below is what I did:</p>
 <img src="/pics/javascript.png" class="blogimage" alt="google maps javascript">
-<p>You can see on line 15 where I bring in the latitude and longitude array. I simply assign it to a var in javascript so I can use it. To drop a pin, you have to create a new Marker object (line 16), which is where you will include options like animation and position. Because I was interested in plotting several pins on the map at the same time from that array of coordinates, I made a simple for loop to create all the individual markers.</p>
+<p>You can see on line 11 where I bring in the latitude and longitude array. I simply assign it to a var in javascript so I can use it. To drop a pin, you have to create a new Marker object (line 16), which is where you will include options like animation and position. Because I was interested in plotting several pins on the map at the same time from that array of coordinates, I made a simple for loop to create all the individual markers.</p>
 
 <p>Here's what it looks like on the page:</p>
 <img src="/pics/mapplots.png" class="blogimage" alt="google map with pin drops">
