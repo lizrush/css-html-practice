@@ -8,9 +8,10 @@ date: 2014-03-05
 
 <p> First, make sure you have the jquery-modal-rails and jquery-ui-rails gems in your gemfile.
 <p><img class="blogimage" src="/pics/modal-gemfile.png" alt="screenshot of gemfile" width="526px" height="196px"></p>
-<p> The <a href='https://github.com/dei79/jquery-modal-rails'>jquery-modal-rails</a> gem is awesome because it does the bulk of the styling work for you. In order to make it work, you will need to add
-"require jquery.ui.all
- require jquery.modal"
+<p> The <a href='https://github.com/dei79/jquery-modal-rails'>jquery-modal-rails</a> gem is awesome because it does the bulk of the styling work for you. In order to make it work, you will need to add:
+
+<code>require jquery.ui.all<br>
+ require jquery.modal</code>
 
 to both the application.css and application.js files in your assests directory. And that's basically the whole set up of the gem!</p>
 
@@ -22,8 +23,11 @@ to both the application.css and application.js files in your assests directory. 
 
 <p>What did this look like when I wrote it by hand?:</p>
 
-<img class="blogimage" src="/pics/modal-jquery.png" alt="screenshot of gemfile" >
-
+<p> Here is the jquery I wrote to generate a modal window and open & close it: </p>
+<img class="blogimage" src="/pics/modal-jquery.png" alt="screenshot of jquery">
+<p>And here is the css styling I had to do by hand when I didn't use the gem:</p>
+<img class="blogimage" src="/pics/modal-css.png" alt="screenshot of css">
+<br>
 
 
 <h5><a href="/blog"> back </a></h5>
