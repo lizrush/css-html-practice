@@ -9,23 +9,23 @@ date: 2014-03-05
 <p> First, make sure you have the jquery-modal-rails and jquery-ui-rails gems in your gemfile.
 <p><img class="blogimage" src="/pics/modal-gemfile.png" alt="screenshot of gemfile" width="526px" height="196px"></p>
 <p> The <a href='https://github.com/dei79/jquery-modal-rails'>jquery-modal-rails</a> gem is awesome because it does the bulk of the styling work for you. In order to make it work, you will need to add:
-
+<br>
 <code>require jquery.ui.all<br>
  require jquery.modal</code>
-
+<br>
 to both the application.css and application.js files in your assests directory. And that's basically the whole set up of the gem!</p>
 
-<p>Next, you will need to set up the view to render the modal. This gem works by having the content in a div loaded in the html with a style set to none, and then when you click a link, the gem handles the javascript necessary to toggle that div to be visible, inside the prestiled modal window. This is the sample code from the gem's readme:</p>
+<p>Next, you will need to set up the view to render the modal. This gem works by having the content in a div loaded in the html with the style setting "display:none" , and then when you click a link, the gem handles the javascript necessary to toggle that div to be visible, inside the prestiled modal window. This is the sample code from the gem's readme:</p>
 
 <p><img class="blogimage" src="/pics/modal-div.png" alt="screenshot of gemfile" width="500px"></p>
 
 <p>You'll see that the div has an id which matches what is in the link_to_modal method. The gem provides link_to_modal so that you don't have to do any of the javascript or jquery! If you look in the gem's documentation, you'll also see that the gem supports forms so that all calls are made with ajax. </p>
 
-<p>What did this look like when I wrote it by hand?:</p>
+<p>What did this look like when all this code was written without the gem?:</p>
 
-<p> Here is the jquery I wrote to generate a modal window and open & close it: </p>
+<p> Here is the jquery to generate a modal window and open & close it: </p>
 <img class="blogimage" src="/pics/modal-jquery.png" alt="screenshot of jquery">
-<p>And here is the css styling I had to do by hand when I didn't use the gem:</p>
+<p>And here is the css styling without the gem:</p>
 <img class="blogimage" src="/pics/modal-css.png" alt="screenshot of css">
 <br>
 
