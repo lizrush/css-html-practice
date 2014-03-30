@@ -24,16 +24,16 @@ App.Store = DS.Store.extend({<br>
 </code>
 
 <p>Of course, replace the host with the uri of your data source and remove all the fixture data from your models. At this point, you should have the exact same app you had with fixture data, but now each model should return data from your API.<br><br>
-Before:
+<strong>Before:</strong><br>
 <br>
 <img src="/pics/fixturedata.png"/>
 <br>
-After:
+<strong>After:</strong><br>
 <img src="/pics/restdata.png"/>
 <br><br>
 
 Now we have an ember app pulling data from the API. Why should you now use local storage? Well, the reason I chose to use local storage was because I could. The second reason was because I thought it would provide and interesting way to implement a store cart where I would no longer need to call the API when a user adds items to their cart. In this use of local storage, we are going to create 'item' records in the client's local storage when they click "add to cart".</p><p>
-<img src="/pics/localstorage.png"/><br>
+<img src="/pics/localstorage.png"/><br><br>
 As you can see above, I have added the first few lines defining the adaptor for Item so as to override the RESTAdaptor in the main.js that we previously set up. This will only apply to the Item model. If you're wondering how LSAdaptor is defined- well, that's the next step. Download the Local Storage adaptor from its source <a href="https://raw.github.com/rpflorence/ember-localstorage-adapter/master/localstorage_adapter.js"> here</a>.
 
 </p><p>
