@@ -14,26 +14,26 @@ This short walkthrough is going to assume some basic familiarity with ember. You
 The first thing we are going to do is hook our application up with the REST Adaptor. In your main.js, place this code:<br>
 
 <code>
-var App = Ember.Application.create({});
+var App = Ember.Application.create({});<br>
 
-App.Store = DS.Store.extend({
-  adapter: DS.RESTAdapter.extend({
-    host: "http://localhost:3000"
-  })
-});
+App.Store = DS.Store.extend({<br>
+  adapter: DS.RESTAdapter.extend({<br>
+    host: "http://localhost:3000"<br>
+  })<br>
+});<br>
 </code>
 
-<p>Of course, replace the host with the uri of your data source and remove all the fixture data from your models. At this point, you should have the exact same app you had with fixture data, but now each model should return data from your API.<br>
+<p>Of course, replace the host with the uri of your data source and remove all the fixture data from your models. At this point, you should have the exact same app you had with fixture data, but now each model should return data from your API.<br><br>
 Before:
 <br>
-<img src="/pics/fixture-data.png"/>
+<img src="/pics/fixturedata.png"/>
 <br>
 After:
-<img src="/pics/rest.png"/>
+<img src="/pics/restdata.png"/>
 <br><br>
 
 Now we have an ember app pulling data from the API. Why should you now use local storage? Well, the reason I chose to use local storage was because I could. The second reason was because I thought it would provide and interesting way to implement a store cart where I would no longer need to call the API when a user adds items to their cart. In this use of local storage, we are going to create 'item' records in the client's local storage when they click "add to cart".</p><p>
-<img src="/pics/localstorage.png"/>
+<img src="/pics/localstorage.png"/><br>
 As you can see above, I have added the first few lines defining the adaptor for Item so as to override the RESTAdaptor in the main.js that we previously set up. This will only apply to the Item model. If you're wondering how LSAdaptor is defined- well, that's the next step. Download the Local Storage adaptor from its source <a href="https://raw.github.com/rpflorence/ember-localstorage-adapter/master/localstorage_adapter.js"> here</a>.
 
 </p><p>
